@@ -30,7 +30,7 @@ class Game {
 		console.log(`Tries : ${this.tries}`);
 	    let guess = readlineSync.question('Can you guess the word ? ');
 
-	    if (!this.updateWord(guess)) {
+	    if (!this.updateWord(guess.toLowerCase())) {
 		this.tries -= 1;
 		console.log(chalk.blue(this.tryAgain()));
 	    }
