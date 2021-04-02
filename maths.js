@@ -1,11 +1,11 @@
 const factorial = (n) => {
     let res = 1
-    for (let i = 1; i < n; i++)
+    for (let i = 1; i <= n; i++)
 	res *= i;
     return res;
 }
 
-const binCoeff = (k, n) => {
+const binCoeff = (n, k) => {
     return factorial(n) / (factorial(k) * factorial(n-k));
 }
 

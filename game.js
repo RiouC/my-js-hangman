@@ -16,7 +16,7 @@ class Game {
 			       `And this is why it's important to go to school. To avoid death by hanging…`,
 			       'You like suffocation, do you ?',
 			       //`Don't worry, there's only ${Math.pow(26, [...new Set(this.getWord.split(''))].length)} possible combinations`,
-			       `Don't worry, there's only ${factorial([...new Set(this.getWord.split(''))].length)} possible combinations`,
+			       `Don't worry, there's only ${binCoeff(26, [...new Set(this.getWord.split(''))].length)} possible combinations`,
 			      'What do your eyes see before your death ?']
     }
     
